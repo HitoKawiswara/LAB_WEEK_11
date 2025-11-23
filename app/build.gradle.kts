@@ -4,13 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.lab_week_11"
-    compileSdk {
-        version = release(36)
-    }
+    namespace = "com.example.lab_week_11_a"
+    compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.lab_week_11"
+        applicationId = "com.example.lab_week_11_a"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -38,9 +36,11 @@ android {
 }
 
 dependencies {
-    implementation("androidx.datastore:datastore-preferences:1.2.0")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.10.0")
-    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.10.0")
+
+    implementation("commons-io:commons-io:2.21.0")
+    implementation("androidx.datastore:datastore-preferences:1.1.7")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.4")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.9.4")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
